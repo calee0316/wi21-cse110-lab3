@@ -1,1 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin Lee's Page</title>
+    <link rel="shortcut icon" href="https://www.iconarchive.com/download/i22875/kyo-tux/phuzion/Misc-Games.ico">
+</head>
+
+<body>
+    <main>
+        <h1>Calvin Lee's Page</h1>
+        <h2>Author: Calvin Lee</h2>
+        <h3>CSE110</h3>
+        <p>You can email me at either:</p>
+        <ul>
+            <li><a href="mailto:calee@ucsd.edu">calee@ucsd.edu</a></li>
+            <li><a href="mailto:calvinlee0316@gmail.com">calvinlee0316@gmail.com</a></li>
+        </ul>
+    </main>
+
+
+    <nav>
+        <ol>
+            <h3>Table of Contents</h3>
+            <li>About Me</li>
+            <li>Hobbies</li>
+            <li>Basketball</li>
+            <li>Classes</li>
+        </ol>
+    </nav>
+
+    <span>
+        <h2>About Me</h2>
+        <p><b>Computer Engineering</b> major at <i>UC San Diego</i> who loves to play basketball.
+            Ethnically I am Korean, but I was born and raised in <em>Pleasanton, California</em> then
+            moved to Korea in middle school. <br>
+            As a result, although I enjoy a lot of American things,
+            a lot of hobbies and my favorite media are from here in <strong>Korea</strong></p>
+         <strong>
+            <p>Where I live:</p>
+            <pre>대한민국</pre>
+        </strong>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47576.58102680068!2d127.04354700056462!3d37.50219315156725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4235fb589fb%3A0xb331971bc570bb6a!2sGangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1610495785281!5m2!1sen!2skr"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </span>
+
+    <hr>
+
+    <section>
+        <header>
+            <h2>Hobbies</h2>
+        </header>
+        <ul>
+            <li>
+                <h2>Listening to Music</h2>
+            </li>
+            <li>
+                <h2>Basketball</h2>
+            </li>
+            <li>
+                <h2>Working out</h2>
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <div>
+        <h2>Basketball</h2>
+        <form>
+            <fieldset>
+                <legend>Do you watch basketball?</legend>
+
+                <input type="radio" id="Yes">
+                <label for="Yes">Yes</label><br />
+
+                <input type="radio" id="No">
+                <label for="No">No</label><br />
+            </fieldset>
+        </form>
+        <label for="favorite-player">Who is your favorite basketball player?</label>
+        <select id="favorite-player">
+            <optgroup label="Current">
+                <option>LeBron James</option>
+                <option>Giannis Antetokounmpo</option>
+                <option>Kevin Durant</option>
+            </optgroup>
+            <optgroup label="Retired">
+                <option>Michael Jordan</option>
+                <option>Kobe Bryant</option>
+                <option>Magic Johnson</option>
+            </optgroup>
+            <option value="">Other</option>
+            <option value="">I don't watch basketball</option>
+        </select>
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+                <label for="name">If you selected other, who? </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+        <figure>
+            <img src="https://specials-images.forbesimg.com/imageserve/5fad975faa9c4c321e144b8d/960x0.jpg?cropX1=229&cropX2=2753&cropY1=0&cropY2=1893"
+                width="600" height="450" alt="">
+            <figcaption>My favorite basketball player, Kobe Bryant. RIP Mamba</figcaption>
+        </figure>
+
+        <p>My favorite rookie this year would have to be LaMelo Ball</p>
+        <picture>
+            <source srcset="https://specials-images.forbesimg.com/imageserve/5ff7880306c79b8dba67ea45/960x0.jpg"
+                media="(min-width: 100px)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5ff7880306c79b8dba67ea45/960x0.jpg?fit=scale"
+                width="600" height="450">
+        </picture>
+
+        <table>
+            <caption>Other players I like</caption>
+            <tr>
+                <th scope="col">Player</th>
+                <th scope="col">Skill/10</th>
+                <th scope="col">My Liking/10</th>
+            </tr>
+            <tr>
+                <th scope="row">Kawhi Leonard</th>
+                <td>9</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th scope="row">Luka Doncic</th>
+                <td>9</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <th scope="row">Jaylen Brown</th>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+    </div>
+
+    <aside>
+        <p>Favorite Shape: Circle</p>
+        <canvas id="canvas" width="200" height="100" style="border:1px solid #000000;">
+        </canvas>
+        <script>
+            var c = document.getElementById("canvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Circle", 10, 50);
+        </script>
+        <hr>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+
+        <label for="shape-choose">Choose a shape:</label>
+        <input list="shape" id="shape-choose" name="shape-choose" />
+
+        <datalist id="shape">
+            <option value="Circle">
+            <option value="Triangle">
+            <option value="Rectangle">
+            <option value="Square">
+            <option value="Parallelogram">
+            <option value="Other">
+        </datalist>
+
+    </aside>
+    <hr>
+
+    <div>
+        <label for="comment">Leave a comment:</label>
+        <textarea id="comment" name="comment" rows="5" cols="33"></textarea>
+        <button class="favorite styled" type="button">
+            Submit
+        </button>
+
+    </div>
+
+    <div>
+        <h2>Music</h2>
+        <p>Living in Korea has made me enjoy Korean music, and all my favorite singers are Korean as well</p>
+        <table>
+
+            <colgroup>
+                <col>
+                <col span="2" class="Ballad">
+                <col span="2" class="Rap">
+            </colgroup>
+            <tr>
+                <td> </td>
+                <th scope="col">정승환</th>
+                <th scope="col">박효신</th>
+                <th scope="col">Zico</th>
+                <th scope="col">창모</th>
+            </tr>
+            <tr>
+                <th scope="row">Genre</th>
+                <td>Ballad</td>
+                <td>Ballad</td>
+                <td>Rap</td>
+                <td>Rap</td>
+            </tr>
+            <caption>Favorite singers</caption>
+        </table>
+
+    </div>
+    <div>
+        <p>additional test elements</p>
+        <form action="">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass"><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+            <label for="check">Sample:</label>
+            <input type="checkbox" id="check" name="check"><br><br>
+            <label for="reset">Reset:</label>
+            <input type="reset" id="reset" name="reset"><br><br>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search"><br><br>
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month"><br><br>
+            <label for="range">Pick a range:</label>
+            <input type="range" id="range" name="range"><br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <details>
+            <summary>Details</summary>
+            Just a small secret
+        </details>
+
+
+        <p>Click the button below to display the hidden content from the template element.</p>
+
+        <button onclick="showContent()">Show hidden content</button>
+
+        <template>
+            <h2>Sample video</h2>
+            <video src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" width="214" height="204">
+        </template>
+
+        <script>
+            function showContent() {
+                var temp = document.getElementsByTagName("template")[0];
+                var clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon);
+            }
+        </script>
+        <figure>
+            <figcaption>Sample audio:</figcaption>
+            <audio
+                controls
+                src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+    <footer>Calvin Lee, 2021</footer>
+</body>
+
+</html>
