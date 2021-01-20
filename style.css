@@ -1,6 +1,15 @@
+/* third party font */
+@font-face{
+    font-family: custom;
+    src: url(./customfont.ttf)
+}
+
+
 /* class selector */
 .title{
     text-decoration: overline underline;
+    font-family: custom;
+    font-weight: bold
 }
 
 /* ID selector */
@@ -67,4 +76,5 @@ h2+h3{
 h2+p i{
     color:blue
 }
+
 
