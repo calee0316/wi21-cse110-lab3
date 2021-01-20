@@ -1,0 +1,69 @@
+/* class selector */
+.title{
+    text-decoration: overline underline;
+}
+
+/* ID selector */
+#author{
+    text-decoration: underline;
+}
+
+
+/* universal selector */
+*{
+    background-color:bisque;
+}
+
+/* attribute selector */
+img[class = "nbaplayer"]{
+    margin-top:25px;
+    margin-bottom:25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* element selector */
+p{
+    margin:0, 0, 0, 25px;
+    text-align: left;
+}
+
+/* Pseudo-class selector */
+circle:hover{
+    fill:black;
+}
+
+.email:hover{
+    color: #FF00FF;
+}
+.email:active{
+    color: #0000FF;;
+}
+
+/* Selector List */
+h1, h2 { font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+
+/* Descendant Combinator */
+p b{
+    color: green
+}
+
+/* Child Combinator */
+ol > li{
+    font-style:italic
+}
+
+/* general sibiling combinator */
+h1 ~ p{
+    font-weight: bold;
+}
+
+/* adjacent sibling combinator */
+h2+h3{
+    font-style: italic
+}
+
+/* Combine two selectors */
+h2+p i{
+    color:blue
+}
