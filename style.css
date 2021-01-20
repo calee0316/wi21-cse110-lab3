@@ -30,14 +30,14 @@ p{
 
 /* Pseudo-class selector */
 circle:hover{
-    fill:black;
+    fill:rgb(0,0,0)
 }
 
 .email:hover{
-    color: #FF00FF;
+    color: hsl(0, 100%, 50%)
 }
 .email:active{
-    color: #0000FF;;
+    color: rgba(0,255,0)
 }
 
 /* Selector List */
@@ -45,7 +45,7 @@ h1, h2 { font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 /* Descendant Combinator */
 p b{
-    color: green
+    color: hsla(120,100%,50%,0.3)
 }
 
 /* Child Combinator */
@@ -67,3 +67,4 @@ h2+h3{
 h2+p i{
     color:blue
 }
+
