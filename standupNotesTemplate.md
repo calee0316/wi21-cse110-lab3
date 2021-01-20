@@ -1,7 +1,7 @@
 # Standup 
 ## Date: 
 
-###Summary (if needed):
+### Summary (if needed):
 
 
 #### Individuals:
