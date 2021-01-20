@@ -149,3 +149,6 @@ h2+p i{
 video{
     min-width: 30%;
 }
+
+p.noshow{display:none;}
+p.next{display:block;}
