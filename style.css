@@ -29,6 +29,7 @@ img[class = "nbaplayer"]{
     margin-bottom:25px;
     margin-left: 25px;
     margin-right: 25px;
+    max-width: 70%
 }
 
 /* element selector */
@@ -39,9 +40,17 @@ p{
 
 /* Pseudo-class selector */
 circle:hover{
-    fill:rgb(0,0,0)
+    fill:rgb(0,0,0);
 }
-
+canvas{
+    margin: auto;
+    height:200px;
+    width: 300px;
+    border-width:1px;
+    border-style:solid;
+    border-color: black;
+    border-radius: 5px;
+}
 .email:hover{
     color: hsl(0, 100%, 50%)
 }
@@ -132,3 +141,6 @@ h2+p i{
     font-size: 15 px;
 }
 
+video{
+    min-width: 30%;
+}
